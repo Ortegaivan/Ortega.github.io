@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graham Balls Delight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="logo.png" alt="Graham Balls Delight Logo" class="logo-img">
+                <h1 class="logo-text">Graham Delight</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#whyus">Why Us?</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <h2>Sweet, Creamy and Graham Balls</h2>
+        <p>Delight in every bite — handcrafted for your sweet cravings!</p>
+        <a href="#product" class="btn">See Our Flavors</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            At <b>Graham Balls Delight</b>, we take pride in crafting homemade, bite-sized treats 
+            made from crushed grahams, condensed milk, and love. Our goal is to bring 
+            sweetness and smiles in every box — perfect for any occasion!
+        </p>
+    </section>
+
+    <!-- PRODUCT SECTION -->
+    <section id="product" class="products">
+        <h2>Our Best-Selling Flavors</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="classic.png" alt="Original Graham Balls">
+                <h3>Classic Graham Balls</h3>
+                <p>Sweet, soft, and perfectly creamy.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="peanut.png" alt="Peanut Butter Graham Balls">
+                <h3>Peanut Butter</h3>
+                <p>A nutty twist for peanut lovers.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="marshmallow.png" alt="Marshmallow Graham Balls">
+                <h3>Marshmallow</h3>
+                <p>Soft inside, coated in graham goodness.</p>
+            </div>
+
+            <div class="product-card">
+                <img src="sprinkles.png" alt="Sprinkle Graham Balls">
+                <h3>Sprinkles</h3>
+                <p>Colorful, fun, and perfect for parties!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US SECTION -->
+<section id="whyus" class="whyus">
+    <h2>Why Choose Us?</h2>
+    <div class="whyus-container">
+        <div class="whyus-card">
+            <h3>Freshly Made</h3>
+            <p>Every batch is handcrafted daily using high-quality ingredients for maximum freshness.</p>
+        </div>
+
+        <div class="whyus-card">
+            <h3>Locally Loved</h3>
+            <p>We’re proud to be a community favorite, bringing smiles and sweetness to everyone.</p>
+        </div>
+
+        <div class="whyus-card">
+            <h3>Perfect for Gifting</h3>
+            <p>Our graham balls make thoughtful and delicious gifts for every celebration.</p>
+        </div>
+    </div>
+</section>
+
+   <!-- FEEDBACK SECTION -->
+<section id="feedback" class="feedback">
+    <h2>Customer Feedback</h2>
+
+    <div class="feedback-item">
+        <h3>Maria Santos</h3>
+        <p>“The classic graham balls are my favorite! Soft, creamy, and not too sweet — perfect for my afternoon snack!”</p>
+    </div>
+
+    <div class="feedback-item">
+        <h3>John Dela Cruz</h3>
+        <p>“I ordered the peanut butter flavor for my kids and they loved it! Will definitely buy again!”</p>
+    </div>
+
+    <div class="feedback-item">
+        <h3>Ana Villanueva</h3>
+        <p>“I tried the marshmallow graham balls — the texture and sweetness were just right. Highly recommend it!”</p>
+    </div>
+
+    <div class="feedback-item">
+        <h3>Kevin Reyes</h3>
+        <p>“Fast service and super delicious! Perfect for gifts or party treats.”</p>
+    </div>
+</section>
+
+<!-- ======== CONTACT SECTION ======== -->
+<section class="contacts" id="contacts">
+    <h2>Contact Us</h2>
+    <div class="contact-icons">
+        <!-- Gmail -->
+        <a href="rizigajardo@gmail.com" target="_blank" class="contact-icon gmail" title="Email Us">
+            <img src="gmail.png" alt="Gmail Icon">
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/share/19dtvRoR33/" target="_blank" class="contact-icon facebook" title="Visit our Facebook">
+            <img src="facebook.webp" alt="Facebook Icon">
+        </a>
+
+        <!-- Phone -->
+        <a href="09760300411" class="contact-icon phone" title="Copy our contact number" onclick="copyPhoneNumber(event)">
+            <img src="phone.png" alt="Phone Icon">
+        </a>
+    </div>
+    <p id="copyMessage" class="copy-message">Number copied!</p>
+</section>
+
+<script>
+function copyPhoneNumber(e) {
+    e.preventDefault();
+    const phoneNumber = "09760300411";
+    navigator.clipboard.writeText(phoneNumber);
+    const msg = document.getElementById("copyMessage");
+    msg.style.opacity = "1";
+    setTimeout(() => msg.style.opacity = "0", 1500);
+}
+</script>
+
+    <footer>
+        <p>© 2025 Graham Balls Delight. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
